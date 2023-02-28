@@ -1,0 +1,37 @@
+// Utility Classes
+
+.container {
+  max-width: min(90vw, 1100px);
+  margin-inline: auto;
+  text-align: center;
+}
+
+.primary-btn {
+  background-color: var(--clr-pink-400);
+  color: var(--clr-pale-blue);
+  padding: 0.8rem 2.5rem;
+  border-radius: 30px;
+  font-weight: var(--fw-semi-bold);
+  max-width: 250px;
+  margin: 2rem auto 0;
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: var(--clr-pink-300);
+  }
+}
+
+.secondary-btn {
+  font-weight: var(--fw-semi-bold);
+  border: 2px solid var(--clr-pink-400);
+  color: var(--clr-pink-400);
+  padding: 0.2rem 1.2rem;
+  border-radius: 30px;
+  box-shadow: 0 0px 7px #cccacaa5;
+  transition: 0.3s ease;
+
+  &:hover {
+    color: var(--clr-pink-300);
+    border-color: var(--clr-pink-300);
+  }
+}

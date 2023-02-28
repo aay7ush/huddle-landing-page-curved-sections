@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5vw;
+  margin-bottom: 5rem;
+
+  &__img {
+    max-width: min(22vw, 150px);
+  }
+}

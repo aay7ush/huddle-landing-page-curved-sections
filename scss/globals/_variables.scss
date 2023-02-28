@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+
+:root {
+  // Colors
+  --clr-pink-400: hsl(322, 100%, 66%);
+  --clr-pink-300: hsl(321, 100%, 78%);
+  --clr-red: hsl(0, 100%, 63%);
+  --clr-dark-cyan: hsl(192, 100%, 9%);
+  --clr-pale-blue: hsl(207, 100%, 98%);
+
+  // Fonts
+  --ff-body: "Open Sans", sans-serif;
+  --ff-headings: "Poppins", sans-serif;
+  --fw-normal: 400;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+}

@@ -1,0 +1,70 @@
+@use "../utils/" as u;
+
+.feature__div {
+  display: grid;
+  gap: 4rem;
+
+  &:nth-child(2),
+  &:nth-child(6) {
+    background-color: hsl(207, 100%, 98%);
+    padding-block: 5rem;
+
+    @include u.breakpoint(md) {
+      .img {
+        order: 1;
+      }
+    }
+  }
+
+  &:nth-child(4) {
+    margin-block: 7rem;
+  }
+
+  .content {
+    display: grid;
+    gap: 1rem;
+    padding-inline: 3.5rem;
+    text-align: center;
+
+    @include u.breakpoint(md) {
+      margin-block: auto;
+      text-align: start;
+      font-size: 1.2rem;
+      padding-inline: 3vw;
+    }
+  }
+
+  .img {
+    order: -1;
+    max-width: 300px;
+    margin-inline: auto;
+
+    @include u.breakpoint(md) {
+      max-width: 500px;
+    }
+  }
+
+  @include u.breakpoint(md) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-inline: 3rem;
+  }
+}
+
+@include u.breakpoint(md) {
+  .bg-pattern:nth-child(1) img {
+    content: url(../../images/bg-section-top-desktop-1.svg);
+  }
+
+  .bg-pattern:nth-child(3) img {
+    content: url(../../images/bg-section-bottom-desktop-1.svg);
+  }
+
+  .bg-pattern:nth-child(5) img {
+    content: url(../../images/bg-section-top-desktop-2.svg);
+  }
+
+  .bg-pattern:nth-child(7) img {
+    content: url(../../images/bg-section-bottom-desktop-2.svg);
+  }
+}

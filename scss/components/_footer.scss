@@ -1,0 +1,134 @@
+@use "../utils/" as u;
+
+.footer {
+  display: grid;
+  gap: 3rem;
+  background-color: var(--clr-dark-cyan);
+  color: var(--clr-pale-blue);
+  padding-block: 3rem;
+
+  &__content {
+    display: grid;
+    gap: 1rem;
+    text-align: start;
+
+    .contact {
+      display: grid;
+      gap: 1rem;
+
+      .logo {
+        max-width: 220px;
+      }
+      .body {
+        margin-bottom: 2rem;
+
+        @include u.breakpoint(md) {
+          padding-right: 25vw;
+          margin-bottom: 0;
+          line-height: 1.3rem;
+        }
+      }
+    }
+
+    .socials {
+      display: flex;
+      gap: 1rem;
+      font-size: 1.5rem;
+      margin-top: 2rem;
+
+      a {
+        color: var(--clr-pale-blue);
+        transition: 0.3s ease;
+
+        &:hover {
+          color: hsl(193, 100%, 49%);
+        }
+      }
+
+      @include u.breakpoint(md) {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  &__newsletter {
+    order: -1;
+    text-align: start;
+    display: grid;
+    gap: 0.7rem;
+
+    &-title {
+      font-family: var(--ff-body);
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: var(--fw-bold);
+
+      @include u.breakpoint(md) {
+        font-size: 1.3rem;
+      }
+    }
+
+    &-body {
+      line-height: 1.7rem;
+
+      @include u.breakpoint(md) {
+        line-height: 1.3rem;
+        padding-right: 10vw;
+      }
+    }
+
+    &-sign-up {
+      display: grid;
+      gap: 0.7rem;
+      margin-top: 1.3rem;
+
+      div {
+        @include u.breakpoint(md) {
+          flex-grow: 1;
+        }
+
+        input {
+          outline: none;
+          height: 45px;
+          width: 100%;
+          border-radius: 5px;
+          border: 1.6px solid var(--clr-pale-blue);
+          padding: 1rem;
+        }
+
+        .error {
+          display: none;
+          color: var(--clr-red);
+          padding-top: 0.3rem;
+        }
+      }
+
+      button {
+        border-radius: 5px;
+        font-weight: var(--fw-bold);
+        margin: 0 0 auto auto;
+
+        @include u.breakpoint(md) {
+          margin-inline: 0;
+        }
+      }
+
+      @include u.breakpoint(md) {
+        display: flex;
+        gap: 1.5rem;
+        margin-block: 0.7rem auto;
+      }
+    }
+
+    @include u.breakpoint(md) {
+      order: 0;
+      margin-bottom: auto;
+    }
+  }
+
+  @include u.breakpoint(md) {
+    display: flex;
+    font-size: 0.8rem;
+    padding-inline: 7vw;
+  }
+}

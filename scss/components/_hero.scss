@@ -1,0 +1,57 @@
+@use "../utils/" as u;
+
+.hero {
+  padding-inline: 2.5rem;
+
+  &__title {
+    font-size: 2rem;
+  }
+
+  &__body {
+    margin-top: 1.3rem;
+
+    @include u.breakpoint(md) {
+      padding-inline: 18vw;
+    }
+  }
+
+  .primary-btn {
+    box-shadow: 0 3px 7px #a7a5a5a5;
+  }
+
+  &__img {
+    margin-block: 5rem;
+    max-width: 850px;
+    margin-inline: auto;
+  }
+
+  &__stats {
+    display: grid;
+    gap: 6rem;
+
+    .stat {
+      max-width: 170px;
+      margin-inline: auto;
+
+      img {
+        max-width: 30px;
+      }
+
+      h1 {
+        text-align: left;
+        font-family: var(--ff-body);
+        font-size: 3.5rem;
+        font-weight: var(--fw-bold);
+      }
+
+      p {
+        color: hsl(207, 4%, 55%);
+      }
+    }
+
+    @include u.breakpoint(md) {
+      display: flex;
+      margin-bottom: 7rem;
+    }
+  }
+}

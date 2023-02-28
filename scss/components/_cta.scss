@@ -1,0 +1,17 @@
+@use "../utils/" as u;
+
+.cta {
+  margin-block: 8rem 10rem;
+
+  h1 {
+    margin-inline: 3rem;
+
+    @include u.breakpoint(md) {
+      font-size: 2rem;
+    }
+  }
+
+  .primary-btn {
+    box-shadow: 0 3px 7px #a7a5a5a5;
+  }
+}

@@ -8,7 +8,7 @@ Building realistic projects to improve my front-end skills.
 
 ### Links
 
-- Live Site URL: [Huddle landing page with curved sections](https://fylo-land1ng-page.netlify.app/)
+- Live Site URL: [Huddle landing page with curved sections](https://huddle-curved-sect1ons.netlify.app/)
 
 ## Built with
 
